@@ -5,9 +5,9 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
      <script>
       function initialize() {
-       <!--coordinates of restaurants-->
+       //coordinates of restaurants
 
-      <!--dont touch this-->
+      //dont touch this
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
           center: new google.maps.LatLng(40.7600, -73.9600),
@@ -16,7 +16,7 @@
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
 
-        <!--image variables-->
+        //image variables
 
         var doughnut = "../public/images/Doughnut.png";  
         var cafe = "../public/images/cafe.png";  
@@ -25,8 +25,8 @@
         var icecream = "../public/images/icecream.png";   
         
         var dir = new Array();
-<<<<<<< HEAD
-        dir[0] = new Array("Doughnut Plant", doughnut, new google.maps.LatLng(40.716349,-73.9886656), ""); 
+// HEAD
+        dir[0] = new Array("Doughnut Plant", doughnut, new google.maps.LatLng(40.716349,-73.9886656),""); 
         dir[1] = new Array("Baked by Melissa", cupcake, new google.maps.LatLng(40.783060,  -73.971249), "http://www.menupages.com/menuprocess?id=62350&link=64a4585a81d3132065dbfa4387d8059794af95ef99f5dbb744dd3f5180e2a54166fcb121eac560e49f64d7aac5b59b85"); 
         dir[2] = new Array("Ferrara Bakery and Cafe", cafe, new google.maps.LatLng(40.7168102,-73.9981341), "http://www.menupages.com/menuprocess?id=51989link=5641bd50521af0ada4e79fdc6f50f8309c75715250ffe3908f21f5f741d1203d66fcb121eac560e49f64d7aac5b59b85"); 
         dir[3] = new Array("Magnolia Bakery", cafe, new google.maps.LatLng(40.735881,  -74.004967), "http://www.menupages.com/menuprocess?id=51631&link=103638c75ccc9c30b38b283b2f100e22a3c25a0f3d738b4079971ff4449abb3b66fcb121eac560e49f64d7aac5b59b85"); 
@@ -59,7 +59,7 @@
         dir[30] = new Array("Viva le Crepe", cake, new google.maps.LatLng(40.731067, -73.993250), "");
         dir[31] = new Array("Cafe Bene", cafe, new google.maps.LatLng(40.760745,-73.984908), "");
         dir[32] = new Array("Spot Dessert Bar", cafe, new google.maps.LatLng(40.729363,-73.988941), "");
-=======
+/*
         dir[0] = new Array("Doughnut Plant", doughnut, new google.maps.LatLng(40.716349,-73.9886656)); 
         dir[1] = new Array("Baked by Melissa", cupcake, new google.maps.LatLng(-40.783060,  -73.971249)); 
         dir[2] = new Array("Ferrara Bakery and Cafe", cafe, new google.maps.LatLng(40.7168102,-73.9981341)); 
@@ -88,7 +88,7 @@
         dir[25] = new Array("Momofuku Milk Bar", cafe, new google.maps.LatLng(40.731898, -73.985696));
         dir[26] = new Array("Carrot Top Pastries", cafe, new google.maps.LatLng(40.871262,-73.9175285));
         dir[27] = new Array("Carrot Top Pastries", cafe, new google.maps.LatLng(40.871262,-73.9175285));
->>>>>>> origin/master
+*///origin/master
         
         function marker(pos, ico, titl, link) {
       var marker = new google.maps.Marker({
@@ -110,8 +110,7 @@
     var markers = [];
     for (var i = 0; i < dir.length; i++) {
       var newMarker = marker(dir[i][2], dir[i][1], dir[i][0], dir[i][3]);
-
-      link = dir[i][3];
+        link = dir[i][3];
     
       markers.push(newMarker);
      } 
@@ -137,7 +136,7 @@
       .logo {
         width:80%;
         margin: 0 auto;
-      }
+     }
       .contents {
         margin-top: 1em;
         padding-bottom: 1em;
