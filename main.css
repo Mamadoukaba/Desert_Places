@@ -5,7 +5,7 @@ html{
     background-size: cover;
     margin: 0 auto;
     down: 0;
-
+    font-family: Shadows Into Light;
 }
 
 .navigation {
@@ -23,7 +23,9 @@ a:hover{
 .nav:hover {
     color: yellow;
 }
-
+#contents {
+    width: 70%;
+}
 a {
 margin-left: 40px;
 margin-right: 40px;
