@@ -97,9 +97,13 @@
         icon: ico,
         title: titl
       });
+      console.log("link1: "+link);
 
       if (link != "") {
         google.maps.event.addListener(newMarker, 'click', function() { 
+
+
+          console.log("link2: "+link);
 
           window.location.href = link;
 
@@ -155,7 +159,7 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo"> <a href="file:///C:/Users/Shanee%20H/Documents/GitHub/Desert_Places/home.html"</a> <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light'> <h1>Dessert Shops in Manhattan</h1></div> 
+      <div class="logo"> <!--<a href="file:///C:/Users/Shanee%20H/Documents/GitHub/Desert_Places/home.html"</a>--> <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light'> <h1><a href="file:///C:/Users/Shanee%20H/Documents/GitHub/Desert_Places/home.html">Dessert Shops in Manhattan</a></h1></div> 
     </div>
     <div class="contents">
     <div id="map-canvas" class="map"></div><br />
