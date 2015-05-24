@@ -1,0 +1,198 @@
+<link rel="stylesheet" href="../public/css/style.css">
+
+<html>
+  <head>
+    <h1> New York City Dessert Shops </h1>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+       <!--coordinates of restaurants-->
+       var Doughnut_Plant = new google.maps.LatLng(40.716349,-73.9886656);
+       var Baked_by_Melissa = new google.maps.LatLng(40.783060,  -73.971249);
+       var Ferrara = new google.maps.LatLng(40.7168102,-73.9981341);
+       var Magnolia = new google.maps.LatLng(40.735881,  -74.004967);
+       var Billy = new google.maps.LatLng(40.717715,-74.004476);
+       var Sprinkles = new google.maps.LatLng(40.7119309,-74.0152574);
+       var Tribeca = new google.maps.LatLng(40.7158669,-74.0022969);
+       var Little_Cupcake = new google.maps.LatLng(40.7207871,-73.99875651);
+       var Erin = new google.maps.LatLng(40.7207871,-73.9987565);
+       var Butter = new google.maps.LatLng(40.7207871,-73.9987565);
+       var Dessert_Club = new google.maps.LatLng(40.7296984,-73.9986707);
+       var Magnolia2 = new google.maps.LatLng(40.7328204,-74.0042068);
+       var Heather = new google.maps.LatLng(40.7395516,-73.9911605);
+       var Bagel = new google.maps.LatLng(40.7456319,-73.9891435);
+       var Crumbs = new google.maps.LatLng(40.7511929,-73.9872953);
+       var Le_Pain= new google.maps.LatLng(40.7950575,-73.9621255);
+       var Sugar = new google.maps.LatLng(40.782548,-73.9784762);
+       var Champignon = new google.maps.LatLng(40.7950575,-73.9621255);
+       var Tropezienne  = new google.maps.LatLng(40.7950575,-73.9621255);
+       var Make_my_cake = new google.maps.LatLng(40.8166593,-73.9475772);
+       var Washington = new google.maps.LatLng(40.8494849,-73.9351398);
+       var Dyckman = new google.maps.LatLng(40.8639275,-73.9222063);
+       var Carrot = new google.maps.LatLng(40.871262,-73.9175285);
+
+      <!--dont touch this-->
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.7600, -73.9600),
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+        <!--image variables-->
+
+        var doughnut = '../public/images/Doughnut.png'  
+        var cafe = '../public/images/cafe.png'  
+        var cake = '../public/images/cake.png'  
+        var cupcake = '../public/images/cupcake.png'
+        var icecream = '../public/images/icecream.png'    
+
+
+        <!--markers-->
+        var marker= new google.maps.Marker({
+          position: Doughnut_Plant,
+          map: map,
+          icon: doughnut,
+          title: 'Doughnut Plant'
+        })
+        var marker= new google.maps.Marker({
+          position: Baked_by_Melissa,
+          map: map,
+          icon: cupcake,
+          title: 'Baked by Melissa'
+        })
+        var marker= new google.maps.Marker({
+          position: Ferrara,
+          map: map,
+          icon: cafe,
+          title: 'Ferrara Bakery and Cafe'
+        })
+        var marker= new google.maps.Marker({
+          position: Magnolia,
+          map: map,
+          icon: cafe,
+          title: 'Magnolia Bakery'
+        })
+        var marker= new google.maps.Marker({
+          position: Billy,
+          map: map,
+          icon: cafe,
+          title: "Billy's Bakery"
+        })
+        var marker= new google.maps.Marker({
+          position: Sprinkles,
+          map: map,
+          icon: cupcake,
+          title: 'Sprinkles Cupcakes'
+        })
+        var marker= new google.maps.Marker({
+          position: Tribeca,
+          map: map,
+          icon: cafe,
+          title: 'Tribeca Treats'
+        })
+        var marker= new google.maps.Marker({
+          position: Little_Cupcake,
+          map: map,
+          icon: cupcake,
+          title: 'Little Cupcake Bakeshop'
+        })
+        var marker= new google.maps.Marker({
+          position: Erin,
+          map: map,
+          icon: cafe,
+          title: "Erin McKenna's Bakery"
+        })
+        var marker= new google.maps.Marker({
+          position: Butter,
+          map: map,
+          icon: cafe,
+          title: 'Butter Lane'
+        })
+        var marker= new google.maps.Marker({
+          position: Dessert_Club,
+          map: map,
+          icon: cupcake,
+          title: 'Dessert Club'
+        })
+        var marker= new google.maps.Marker({
+          position: Magnolia2,
+          map: map,
+          icon: cafe,
+          title: 'Magnolia Bakery'
+        })
+        var marker= new google.maps.Marker({
+          position: Heather,
+          map: map,
+          icon: cake,
+          title: 'Heather Barranco Dreamcakes'
+        })
+        var marker= new google.maps.Marker({
+          position: Bagel,
+          map: map,
+          icon: cafe,
+          title: 'Bagel Café and Catering'
+        })
+        var marker= new google.maps.Marker({
+          position: Crumbs,
+          map: map,
+          icon: cupcake,
+          title: 'Crumbs Bake Shop'
+        })
+        var marker= new google.maps.Marker({
+          position: Le_Pain,
+          map: map,
+          icon: cafe,
+          title: 'Le Pain Quotidien'
+        })
+        var marker= new google.maps.Marker({
+          position: Sugar,
+          map: map,
+          icon: cafe,
+          title: 'Sugar and Plumm'
+        })
+        var marker= new google.maps.Marker({
+          position: Champignon,
+          map: map,
+          icon: cafe,
+          title: 'Champignon Café '
+        })
+        var marker= new google.maps.Marker({
+          position: Tropezienne,
+          map: map,
+          icon: cafe,
+          title: 'La Tropezienne Bakery'
+        })
+        var marker= new google.maps.Marker({
+          position: Make_my_cake,
+          map: map,
+          icon: cake,
+          title: 'Make My Cake'
+        })
+        var marker= new google.maps.Marker({
+          position: Washington,
+          map: map,
+          icon: cafe,
+          title: 'Fort Washington Bakery'
+        })
+        var marker= new google.maps.Marker({
+          position: Dyckman,
+          map: map,
+          icon: cafe,
+          title: 'Dyckman Bakery'
+        })
+        var marker= new google.maps.Marker({
+          position: Carrot,
+          map: map,
+          icon: cafe,
+          title: 'Carrot Top Pastries'
+        })
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

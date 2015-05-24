@@ -1,0 +1,28 @@
+html{
+    background-color: #E61F44;
+    font-size: 35px;
+    down: 0;
+
+}
+
+.navigation {
+    text-align: center;
+}   
+    
+.navigation:hover {
+    color: yellow;
+    
+}
+
+a:hover{
+    color: yellow;
+}
+.nav:hover {
+    color: yellow;
+}
+
+a {
+margin-left: 40px;
+margin-right: 40px;
+text-decoration: none;
+}
