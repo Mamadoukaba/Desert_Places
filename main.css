@@ -1,6 +1,9 @@
 html{
     background-color: #E61F44;
     font-size: 35px;
+    background: #eee url('public/images/bg.jpg') center center no-repeat fixed;
+    background-size: cover;
+    margin: 0 auto;
     down: 0;
 
 }
