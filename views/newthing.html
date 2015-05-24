@@ -2,9 +2,8 @@
 
 <html>
   <head>
-    <h1> New York City Dessert Shops </h1>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
+     <script>
       function initialize() {
        <!--coordinates of restaurants-->
 
@@ -19,13 +18,48 @@
 
         <!--image variables-->
 
-        var doughnut = '../public/images/Doughnut.png'  
-        var cafe = '../public/images/cafe.png'  
-        var cake = '../public/images/cake.png'  
-        var cupcake = '../public/images/cupcake.png'
-        var icecream = '../public/images/icecream.png'   
+        var doughnut = "../public/images/Doughnut.png";  
+        var cafe = "../public/images/cafe.png";  
+        var cake = "../public/images/cake.png";  
+        var cupcake = "../public/images/cupcake.png";
+        var icecream = "../public/images/icecream.png";   
         
         var dir = new Array();
+<<<<<<< HEAD
+        dir[0] = new Array("Doughnut Plant", doughnut, new google.maps.LatLng(40.716349,-73.9886656), ""); 
+        dir[1] = new Array("Baked by Melissa", cupcake, new google.maps.LatLng(40.783060,  -73.971249), "http://www.menupages.com/menuprocess?id=62350&link=64a4585a81d3132065dbfa4387d8059794af95ef99f5dbb744dd3f5180e2a54166fcb121eac560e49f64d7aac5b59b85"); 
+        dir[2] = new Array("Ferrara Bakery and Cafe", cafe, new google.maps.LatLng(40.7168102,-73.9981341), "http://www.menupages.com/menuprocess?id=51989link=5641bd50521af0ada4e79fdc6f50f8309c75715250ffe3908f21f5f741d1203d66fcb121eac560e49f64d7aac5b59b85"); 
+        dir[3] = new Array("Magnolia Bakery", cafe, new google.maps.LatLng(40.735881,  -74.004967), "http://www.menupages.com/menuprocess?id=51631&link=103638c75ccc9c30b38b283b2f100e22a3c25a0f3d738b4079971ff4449abb3b66fcb121eac560e49f64d7aac5b59b85"); 
+        dir[4] = new Array("Billy's Bakery", cafe, new google.maps.LatLng(40.717715,-74.004476), "http://www.menupages.com/menuprocess?id=6245&link=7d9d20b2cf11b59798a44d3bc25b68a197bbd6f9f415f93c2ac7858984d87669"); 
+        dir[5] = new Array("Sprinkles Cupcakes", cupcake, new google.maps.LatLng(40.7119309,-74.0152574), "http://www.menupages.com/menuprocess?id=83447link=bcdcc4a2ef1fb8993e3bf793c665de1dbe4252d6ddc4f6263baab974f5f8a3a266fcb121eac560e49f64d7aac5b59b85"); 
+        dir[6] = new Array("Tribeca Treats", cafe, new google.maps.LatLng(40.7158669,-74.0022969), "http://www.menupages.com/menuprocess?id=41980&link=afe888693a61792f995619513672ad873af1757b1102c1e4bca547cbeb5eb47866fcb121eac560e49f64d7aac5b59b85"); 
+        dir[7] = new Array("Little Cupcake Bakeshop", cupcake, new google.maps.LatLng(40.722932,-73.994852), "http://www.menupages.com/menuprocess?id=77829&link=f4ac09f126a93e32b46f251990366fbe9b4587b5f07b13bad1bf4a641d1681c366fcb121eac560e49f64d7aac5b59b85"); 
+        dir[8] = new Array("Erin McKenna's Bakery", cafe, new google.maps.LatLng(40.7207871,-73.9987565), "https://www.erinmckennasbakery.com/"); 
+        dir[9] = new Array("Butter Lane", cafe, new google.maps.LatLng(40.7048872,-74.0123737), "http://www.menupages.com/menuprocess?id=55903&link=ca1ba5e7964a90eaeddb5b3952edeea45eb798d5e1b648cffd2996ab523dff6066fcb121eac560e49f64d7aac5b59b85"); 
+        dir[10] = new Array("Dessert Club", cupcake, new google.maps.LatLng(40.7296984,-73.9986707), "http://www.menupages.com/menuprocess?id=50884&link=dea119bbc33801e9a3819f9595aa2b619754e698bd501204daf33c094e0661d666fcb121eac560e49f64d7aac5b59b85"); 
+        dir[11] = new Array("Heather Barranco Dreamcakes", cake, new google.maps.LatLng(40.7395516,-73.9911605), ""); 
+        dir[12] = new Array("Bagel Café and Catering", cafe, new google.maps.LatLng(40.7456319,-73.9891435), "http://www.seamless.com/food-delivery/bagel-cafe-catering-third-avenue-manhattan-consumer.7944.r");
+        dir[13] = new Array("Crumbs Bake Shop", cupcake, new google.maps.LatLng(40.7511929,-73.9872953), "http://www.menupages.com/menuprocess?id=5379&link=43ea68575a050d0dad585320efdab64c7f85fd22b625ec905f69e131b84dfece");
+        dir[14] = new Array("Le Pain Quotidien", cafe, new google.maps.LatLng(40.7950575,-73.9621255), "http://www.menupages.com/menuprocess?id=2881&link=41b1c737866b30b53547a651273fce4e3ce1607a3085a38fbbff1bb23c8d2bb1");
+        dir[15] = new Array("Sugar and Plumm", cafe, new google.maps.LatLng(40.782548,-73.9784762), "http://www.menupages.com/menuprocess?id=111709&link=226fb299c765085df56df24c542a10a3af9ac720482382324fa7d7ded6b9b12f6ce11a9516f35f756b24a92aa150db82");
+        dir[16] = new Array("Champignon Café", cafe, new google.maps.LatLng(40.787463,-73.953765), "http://www.menupages.com/menuprocess?id=3999&link=3ac3fe492c836abaea82f24d9f5461619798a97492b0f855b35c5c9301aaefa2");
+        dir[17] = new Array("La Tropezienne Bakery", cafe, new google.maps.LatLng(40.792058,-73.938568), "http://www.menupages.com/menuprocess?id=41307&link=b072fdfbbe60ee5f23413250979cb499526ef33db3fe906107d2e64ee43e849a66fcb121eac560e49f64d7aac5b59b85");
+        dir[18] = new Array("Make My Cake", cake, new google.maps.LatLng(40.8166593,-73.9475772), "http://www.menupages.com/menuprocess?id=41676&link=6fe9a08bf60e14fb77a388905211b08179e6bafe05ba32a4dc1c28526b973aca66fcb121eac560e49f64d7aac5b59b85");
+        dir[19] = new Array("Fort Washington Bakery", cafe, new google.maps.LatLng(40.8494849,-73.9351398), "");
+        dir[20] = new Array("Dyckman Bakery", cafe, new google.maps.LatLng(40.8639275,-73.9222063), ""); 
+        dir[21] = new Array("Snowdays Shavery", icecream, new google.maps.LatLng(40.729037, -73.984734), "");
+        dir[22] = new Array("Big Gay Ice cream Shop", icecream, new google.maps.LatLng(40.733317, -74.003312), "");
+        dir[23] = new Array("Big Gay Ice cream Shop", icecream, new google.maps.LatLng(40.726429, -73.984094), "");
+        dir[24] = new Array("Carrot Top Pastries", cafe, new google.maps.LatLng(40.871262,-73.9175285), "http://www.menupages.com/menuprocess?id=3999&link=3ac3fe492c836abaea82f24d9f5461619798a97492b0f855b35c5c9301aaefa2");
+         dir[25] = new Array("Momofuku Milk Bar", cafe, new google.maps.LatLng(40.731898, -73.985696), "");
+        dir[26] = new Array("Insomnia Cookies", cafe, new google.maps.LatLng(40.739827, -74.003224), "");
+        dir[27] = new Array("Chinatown Icecream Factory", icecream, new google.maps.LatLng(40.7152399,-73.9967638), "");
+        dir[28] = new Array("InDessert", cake, new google.maps.LatLng(40.713203,-73.997859), "");
+        dir[29] = new Array("Beautiful Memory Dessert", cake, new google.maps.LatLng(40.715441,-73.998315), "");
+        dir[30] = new Array("Viva le Crepe", cake, new google.maps.LatLng(40.731067, -73.993250), "");
+        dir[31] = new Array("Cafe Bene", cafe, new google.maps.LatLng(40.760745,-73.984908), "");
+        dir[32] = new Array("Spot Dessert Bar", cafe, new google.maps.LatLng(40.729363,-73.988941), "");
+=======
         dir[0] = new Array("Doughnut Plant", doughnut, new google.maps.LatLng(40.716349,-73.9886656)); 
         dir[1] = new Array("Baked by Melissa", cupcake, new google.maps.LatLng(-40.783060,  -73.971249)); 
         dir[2] = new Array("Ferrara Bakery and Cafe", cafe, new google.maps.LatLng(40.7168102,-73.9981341)); 
@@ -54,25 +88,71 @@
         dir[25] = new Array("Momofuku Milk Bar", cafe, new google.maps.LatLng(40.731898, -73.985696));
         dir[26] = new Array("Carrot Top Pastries", cafe, new google.maps.LatLng(40.871262,-73.9175285));
         dir[27] = new Array("Carrot Top Pastries", cafe, new google.maps.LatLng(40.871262,-73.9175285));
+>>>>>>> origin/master
         
-        function marker(pos, ico, titl) {
-			var marker = new google.maps.Marker({
-				position: pos,
-				map: map,
-				icon: ico,
-				title: titl
-			})
-			return marker;
-		}
-		var markers = [];
-		for (i = 0; i < dir.length; i++) {
-			markers.push(marker(dir[i][2], dir[i][1], dir[i][0]));
-		}
+        function marker(pos, ico, titl, link) {
+      var marker = new google.maps.Marker({
+        position: pos,
+        map: map,
+        icon: ico,
+        title: titl
+      });
+
+      if (link != "") {
+        google.maps.event.addListener(newMarker, 'click', function() { 
+
+          window.location.href = link;
+
+        });
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+      return marker;
+    }
+    var markers = [];
+    for (var i = 0; i < dir.length; i++) {
+      var newMarker = marker(dir[i][2], dir[i][1], dir[i][0], dir[i][3]);
+
+      link = dir[i][3];
+    
+      markers.push(newMarker);
+     } 
+  }
+      google.maps.event.addDomListener(window,'load', initialize);
+     
     </script>
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+      body {
+        font-family: Roboto Slab;
+        background: #eee url('../public/images/bg.jpg') center center no-repeat fixed;
+        background-size: cover;
+        margin: 0 auto;
+      }
+      .header {
+        background-color:rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 5px #000;
+        padding: 0.01em 0.01em;
+        color: #fff;
+        text-shadow: 0px 0px 5px #000;
+      }
+      .logo {
+        width:80%;
+        margin: 0 auto;
+      }
+      .contents {
+        margin-top: 1em;
+        padding-bottom: 1em;
+      }
+      .map {
+        box-shadow: 0px 0px 10px #000;
+      }
+    </style>
   </head>
   <body>
-    <div id="map-canvas"></div>
+    <div class="header">
+      <div class="logo"><h1>Dessert Shops in Manhattan</h1></div> 
+    </div>
+    <div class="contents">
+    <div id="map-canvas" class="map"></div><br />
+    </div>
   </body>
 </html>
