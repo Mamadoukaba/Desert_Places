@@ -29,10 +29,7 @@
        var Make_my_cake = new google.maps.LatLng(40.8166593,-73.9475772);
        var Washington = new google.maps.LatLng(40.8494849,-73.9351398);
        var Dyckman = new google.maps.LatLng(40.8639275,-73.9222063);
-      //var Carrot = new google.maps.LatLng(40.871262,-73.9175285);
-      var Carrot = new google.maps.LatLng(40.766861, -73.967250);
-      // 40.765843, -73.965630
-     // var testMarker = new google.maps.latLng(40.766861, -73.967250);
+       var Carrot = new google.maps.LatLng(40.871262,-73.9175285);
 
       <!--dont touch this-->
         var mapCanvas = document.getElementById('map-canvas');
@@ -185,27 +182,17 @@
           icon: cafe,
           title: 'Dyckman Bakery'
         })
-        var itWorks = new google.maps.Marker({
+        var marker= new google.maps.Marker({
           position: Carrot,
           map: map,
           icon: cafe,
           title: 'Carrot Top Pastries'
         })
-
-       google.maps.event.addListener(itWorks, 'click', function() 
-        { 
-          alert(itWorks.url);
-          //window.location.href = "https://www.google.com/"
-          //window.location.href = "https://www.google.com/";
-        });
-      }//this is where the initialize function ends
-
+      }
       google.maps.event.addDomListener(window, 'load', initialize);
-
     </script>
   </head>
   <body>
     <div id="map-canvas"></div>
-    <a href="www.google.com">link</a>
   </body>
 </html>
