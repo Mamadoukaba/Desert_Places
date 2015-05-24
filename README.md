@@ -1,13 +1,3 @@
----
-tags: kids, mvc
-languages: ruby
-type: interactive practice
----
-
-##Interactive Practice: Model-View-Controller
-
-Fork and clone this repository and follow along in lecture!
-
-(WIP)
-
-
+# Desert_Places
+Places with Deserts!
+This Project is a website that help you track different dessert shops in Manhattan.
