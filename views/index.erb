@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="file:///C:\Users\waikeechang\Desktop\cstuy\codeday">
+
+<html>
+  <head>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var Doughnut_Plant = new google.maps.LatLng(40.716349,-73.9886656);
+
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.7600, -73.9600),
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+        var Doughnut = 'public/images/Food-Doughnut-icon(1).png'  
+
+        var marker= new google.maps.Marker({
+          position: Doughnut_Plant,
+          map: map,
+          icon: Doughnut,
+          title: 'Doughnut Plant'
+        })
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
