@@ -13,7 +13,7 @@ html{
 }   
     
 .navigation:hover {
-    color: yellow;
+    color: white;
     
 }
 
@@ -30,4 +30,8 @@ a {
 margin-left: 40px;
 margin-right: 40px;
 text-decoration: none;
+}
+
+.fullcontent {
+    color: white;
 }
