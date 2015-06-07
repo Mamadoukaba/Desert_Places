@@ -18,10 +18,10 @@ html{
 }
 
 a:hover{
-    color: yellow;
+    color: white;
 }
 .nav:hover {
-    color: yellow;
+    color: white;
 }
 #contents {
     width: 70%;
