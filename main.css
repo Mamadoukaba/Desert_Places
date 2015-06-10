@@ -35,3 +35,9 @@ text-decoration: none;
 .fullcontent {
     color: 3300FF;
 }
+
+}
+.footer, .push {
+height: 4em;
+color: 3300FF;
+}
