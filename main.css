@@ -37,14 +37,14 @@ text-decoration: none;
 }
 
 }
-.footer, .push {
+.footer {
 height: 4em;
 color: 3300FF;
 position:absolute;
-    bottom: 0px;
-    float: right;
-    height: 35px;
-    margin: 0px 50px 0px 0px;
-    text-align: right;
-    padding: 10px 30px;
+bottom: 0px;
+float: left;
+height: 35px;
+margin: 0px 50px 0px 0px;
+text-align: left;
+padding: 10px 30px;
 }
