@@ -40,4 +40,6 @@ text-decoration: none;
 .footer, .push {
 height: 4em;
 color: 3300FF;
+text-align: left;
+text-size: 25px;
 }
